@@ -36,7 +36,7 @@ python product_sales_analysis.py
 Anshumaan Mishra
 
 
-## 📊 Project 25 – Performance Analysis by Class & Gender
+### 📊 Project 25 – Performance Analysis by Class & Gender
 
 ### 🧠 Objective
 This project analyzes student performance in **Math** and **English** based on their **Class** and **Gender**, using the `pandas` library.
