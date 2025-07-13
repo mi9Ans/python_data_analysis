@@ -37,3 +37,80 @@ Anshumaan Mishra
 
 Beginner Python Data Analysis Project | July 2025
 Project #25 of 60
+
+## 📊 Project 25 – Performance Analysis by Class & Gender
+
+### 🧠 Objective
+This project analyzes student performance in **Math** and **English** based on their **Class** and **Gender**, using the `pandas` library.
+
+---
+
+### 📁 Files Included
+- `performance_analysis.py` – Main script
+- `student_extended.csv` – Input CSV dataset
+- `sample_output.png` – Screenshot of output
+
+---
+
+### 🛠️ Features
+- Grouped analysis using `.groupby()` on `Class` and `Gender`
+- Calculates:
+  - 📉 Minimum
+  - 📈 Maximum
+  - 🧮 Average
+  - 🔢 Count
+- Outputs clearly structured data tables for easy comparison
+
+---
+
+### 📥 Sample Input (CSV)
+
+```csv
+Name,Class,Gender,Math,English
+Amit,10,M,85,81
+Neha,10,F,92,95
+Ravi,11,M,78,76
+Simran,11,F,90,85
+Arjun,10,M,65,89
+Sana,11,F,71,70
+Karan,11,M,84,80
+Divya,11,F,72,78
+....
+````
+🖨️Sample Output(Text Perview)
+
+### 🖨️ Sample Output
+
+![sample output](sample_output.png)
+
+Group-wise Average(Class & Gender)
+                    Math  English
+Class Gender                    
+10    F              92      95
+      M              75      85
+11    F              77.7    77.6
+      M              81      78
+
+Aggregated Scores (min, max, count)
+                   Math                English           
+                   min  max count     min  max count
+Class Gender                                        
+10    F             92   92     1      95   95     1
+      M             65   85     2      81   89     2
+11    F             71   90     3      70   85     3
+      M             78   84     2      76   80     2
+
+▶️How to Run 
+
+Make sure pandas is installed. Then run the script using:
+
+python performance_analysis.py
+
+🧑‍💻 Author & Info
+Author: Anshumaan Mishra
+
+Date: July 2025
+
+Category: Beginner Pandas Project
+
+
