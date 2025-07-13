@@ -35,8 +35,6 @@ python product_sales_analysis.py
 👨‍💻 Author
 Anshumaan Mishra
 
-Beginner Python Data Analysis Project | July 2025
-Project #25 of 60
 
 ## 📊 Project 25 – Performance Analysis by Class & Gender
 
