@@ -111,4 +111,71 @@ Date: July 2025
 
 Category: Beginner Pandas Project
 
+## 📊 Project 26 – Product Sales Summary
+
+### 🧠 Objective
+Analyze a CSV file containing product sales and extract key insights like total sales, top performer, and average performance using **pandas**.
+
+---
+
+### 📁 Files Included
+- `product_sales_analysis.py` – Main script for analysis
+- `product_info.csv` – Sample input data
+
+---
+
+### 🛠️ Features
+- ✅ Reads CSV using `pandas`
+- 📈 Calculates:
+  - Total Units Sold
+  - Top-Selling Product
+  - Average Units Sold
+- 🔽 Sorts products by units sold in descending order
+
+---
+
+### 📥 Sample Input (CSV)
+
+```csv
+Product,Units Sold
+Laptop,150
+Phone,200
+Tablet,120
+Monitor,180
+Keyboard,90
+
+   Product  Units Sold
+0   Laptop          150
+1    Phone          200
+2   Tablet          120
+3  Monitor          180
+4 Keyboard           90
+
+Total Units Sold: 740
+
+Top-Selling Product:
+  Product  Units Sold
+1   Phone         200
+
+Average Units Sold: 148.0
+
+Sorted Products by Sales:
+  Product  Units Sold
+1   Phone         200
+3  Monitor        180
+0   Laptop        150
+2   Tablet        120
+4 Keyboard         90
+
+➡️How to run
+Make sure pandas is installed:
+pip install pandas
+
+Then run:
+python product_sales_analysis.py
+
+👨‍💻 Author
+Anshumaan Mishra
+
+
 
