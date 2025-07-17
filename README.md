@@ -177,58 +177,42 @@ python product_sales_analysis.py
 👨‍💻 Author
 Anshumaan Mishra
 
+## 🧹 Project 27: Student Data Cleaning with Pandas
 
-## 🧹 Student Survey Data Cleaning
-
-This project focuses on cleaning a student survey dataset using Python and `pandas`.  
-It handles missing values, inconsistent formats, and duplicates to prepare the data for analysis.
+This project demonstrates beginner-level data cleaning using **Pandas** with a simple student dataset. Tasks include handling missing values, normalizing inconsistent city names, and extracting value counts for analysis.
 
 ---
 
-### ✅ Features
+### 📂 Files Included
 
-- Drops rows that are completely empty
-- Fills missing age values with the rounded mean
-- Converts age column to nullable `Int64`
-- Standardizes gender entries (like 'm', 'M', 'male') → `Male`
-- Title-cases and strips whitespace from names
-- Removes duplicate entries
-- Displays:
-  - Gender counts
-  - Number of unique cities
+- `student_data.py` → Python script for cleaning and analysis
+- `student_data.csv` → Raw student data with inconsistencies
+- `Sample_output.png` → Screenshot showing cleaned output
 
 ---
 
-### 📊 Sample Output
+### ⚙ Features Covered
 
-Gender
-Male 4
-Female 3
-Name: Gender, dtype: int64
-Unique Cities: 9
-Name Age Gender City
-0 Alice 25 Female Delhi
-1 Bob 30 Male delhi
-...
-
+- `fillna()` with `mean()` for numeric columns
+- `value_counts()` for gender distribution
+- City normalization (handling case sensitivity)
+- Checking unique cities with `nunique()`
+- Final cleaned dataset printout
 
 ---
 
-### 🛠 Technologies Used
+### ✅ Libraries Used
 
-- Python 3.x 🐍
-- pandas
+- `pandas`
 
 ---
 
-### 🚀 How to Run
+### 💡 Use Case
 
-Make sure all files are in the same folder.
+This project is ideal for those learning:
+- Basic real-world data cleaning tasks
+- Handling missing values and inconsistencies
+- Beginner-friendly Pandas workflows
 
-```bash
-python student_data.py
-
-👨‍💻 Author
-Anshumaan Mishra
 
 
