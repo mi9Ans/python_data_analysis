@@ -178,4 +178,57 @@ python product_sales_analysis.py
 Anshumaan Mishra
 
 
+## 🧹 Student Survey Data Cleaning
+
+This project focuses on cleaning a student survey dataset using Python and `pandas`.  
+It handles missing values, inconsistent formats, and duplicates to prepare the data for analysis.
+
+---
+
+### ✅ Features
+
+- Drops rows that are completely empty
+- Fills missing age values with the rounded mean
+- Converts age column to nullable `Int64`
+- Standardizes gender entries (like 'm', 'M', 'male') → `Male`
+- Title-cases and strips whitespace from names
+- Removes duplicate entries
+- Displays:
+  - Gender counts
+  - Number of unique cities
+
+---
+
+### 📊 Sample Output
+
+Gender
+Male 4
+Female 3
+Name: Gender, dtype: int64
+Unique Cities: 9
+Name Age Gender City
+0 Alice 25 Female Delhi
+1 Bob 30 Male delhi
+...
+
+
+---
+
+### 🛠 Technologies Used
+
+- Python 3.x 🐍
+- pandas
+
+---
+
+### 🚀 How to Run
+
+Make sure all files are in the same folder.
+
+```bash
+python student_data.py
+
+👨‍💻 Author
+Anshumaan Mishra
+
 
