@@ -215,4 +215,40 @@ This project is ideal for those learning:
 - Beginner-friendly Pandas workflows
 
 
+## 🎓 Student Score Analysis with pandas
+
+This project performs data cleaning and analysis on a dataset of student exam scores, cities, and subjects using Python and pandas.
+
+---
+
+### 📌 Features
+- 🧹 Cleans messy string data (e.g., whitespace, casing)
+- 🔢 Converts non-numeric scores into valid numerical format
+- 🚫 Drops missing or duplicate records
+- 📊 Calculates:
+  - Average score
+  - Unique students
+  - Students per subject
+  - Top scorer in Science
+  - Average score per subject
+  - Most common city
+
+---
+
+### 🧪 Sample Output
+
+
+---
+
+### 🛠️ Tech Stack
+- Python 🐍
+- pandas 📊
+
+---
+
+### 🚀 How to Run
+
+```bash
+python student_performance.py
+
 
