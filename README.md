@@ -251,4 +251,28 @@ This project performs data cleaning and analysis on a dataset of student exam sc
 ```bash
 python student_performance.py
 
+## 📊 Sales Analysis Dashboard using Pivot Tables
+
+### ✅ Description
+This project analyzes a sample sales dataset using pandas pivot tables to generate real-time business reports.
+
+### 🛠️ Tools Used
+- Python 🐍
+- Pandas 📊
+
+### 🚀 Features
+- Total Revenue by Product and Region
+- Average Units Sold per Region
+- Revenue per Salesperson
+- Monthly Revenue Trend (Bonus)
+
+### 📂 Sample Dataset
+- 25 rows of sales transactions (Date, Product, Revenue, Units, etc.)
+
+### 📸 Output Screenshots
+(Add console output or matplotlib charts if you use them)
+
+### 🙌 Learning Outcome
+- Practice with `pivot_table()`, `groupby()`, cleaning, and basic analysis logic.
+
 
