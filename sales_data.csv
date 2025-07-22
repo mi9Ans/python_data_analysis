@@ -1,0 +1,9 @@
+Salesperson,Region,Product,Unit_Sold,Units_Price,Revenue
+Amit,North,TV,10,40000,400000
+Neha,South,Mobile,15,25000,375000
+Ravi,East,Laptop,8,50000,400000
+Priya,West,Fan,20,1500,30000
+Amit,North,TV,12,42000,504000
+Neha,South,Mobile,18,26000,468000
+Ravi,East,Laptop,10,52000,520000
+Priya,West,Fan,22,1600,35200
