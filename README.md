@@ -1,278 +1,126 @@
-## 🛍️ Project #25: Product Sales Analysis
+# 📊 Python Data Analysis Projects  
 
-Analyze basic sales data from a CSV file using Python and **Pandas**.
-
----
-
-### 📂 Files in This Project
-
-- `product_sales.csv` — Sample product sales data
-- `product_sales_analysis.py` — Python script to process and summarize the data
+Beginner-friendly Python projects for analyzing real-world **CSV datasets** using **Pandas**.  
+Covers **data cleaning, transformation, grouping, and summary reporting**.  
 
 ---
 
-### ▶️ How to Run
+## 🛠️ Tech Stack  
+- Python 🐍  
+- Pandas 📊  
 
-1. Make sure `pandas` is installed:
-```bash
+---
+
+## 📂 Projects Included  
+
+### 🧹 Project 1: Student Survey Cleaning  
+**Objective:** Clean a messy student survey dataset with missing values and inconsistent casing.  
+
+**Files:**  
+- `student_survey_dirty.csv` → Raw input dataset (11 rows, messy formatting)  
+- `student_data.py` → Cleaning script  
+
+**Features:**  
+- Handles missing values (`fillna`, `dropna`)  
+- Normalizes text (title case for names/cities)  
+- Converts `Age` column to integers  
+- Checks unique values with `.nunique()` and `.value_counts()`  
+
+---
+
+### 🎓 Project 2: Student Performance Analysis  
+**Objective:** Analyze student scores across subjects, cities, and gender.  
+
+**Files:**  
+- `student_performance.py` → Analysis script  
+- `student_extended.csv` → Cleaned dataset (output)  
+
+**Features:**  
+- String cleaning (`strip`, `title`)  
+- Gender normalization (`M` → Male, `F/f` → Female)  
+- Score conversion to numeric with error handling  
+- Drops duplicates  
+- Calculates:  
+  - Average scores  
+  - Most common city  
+  - Unique subjects/students  
+  - Top scorer in Science  
+
+---
+
+### 🧠 Project 3: Student Performance by Class & Gender  
+**Objective:** Group analysis of Math & English scores.  
+
+**Files:**  
+- `performance_analysis.py` → Grouped analysis script  
+- `student_extended.csv` → Input dataset  
+- `sample_output.png` → Example results  
+
+**Features:**  
+- `.groupby()` by Class & Gender  
+- Aggregations: min, max, mean, count  
+- Outputs structured comparison tables  
+
+---
+
+### 🛒 Project 4: Product Sales Analysis  
+**Objective:** Process raw sales data and calculate revenue insights.  
+
+**Files:**  
+- `product_sales.csv` → Sample sales dataset  
+- `product_sales_analysis.py` → Script for analysis  
+
+**Features:**  
+- Computes **Revenue = Units × Price**  
+- Summarizes sales per product  
+- Finds:  
+  - 💰 Total Revenue  
+  - 🏆 Best Seller  
+  - 📈 Average Units Sold  
+
+---
+
+### 📦 Project 5: Product Sales Summary  
+**Objective:** Summarize product sales performance.  
+
+**Files:**  
+- `product_info.csv` → Input dataset  
+- `sales_summary_generator.py` → Script for summary  
+- `sample_sales_generator.png` → Example output  
+
+**Features:**  
+- Reads sales data with pandas  
+- Calculates:  
+  - Total Units Sold  
+  - Top-Selling Product  
+  - Average Units Sold  
+- Sorts results in descending order  
+
+---
+
+### 📑 Project 6: Sales Data Analysis  
+**Objective:** Analyze transactional sales records.  
+
+**Files:**  
+- `sales_data.csv` → Raw dataset  
+- `sales_analysis.py` → Script for processing  
+
+**Features:**  
+- Cleans and loads sales records  
+- Performs grouping & summarization  
+- Prepares data for reporting/dashboard  
+
+---
+
+## 🚀 How to Run  
+
+1. Install requirements:
+   ```bash
 pip install pandas
-2. Run the script
-python product_sales_analysis.py
-
-📊 Product Sales Summary
-----------------------------
-    Product  Units_Sold  Unit_Price  Revenue
-0  Notebook          120        2.50    300.00
-1       Pen          250        1.20    300.00
-2    Eraser          180        0.50     90.00
-3    Marker          100        1.75    175.00
-4     Scale           75        1.50    112.50
-
-💰 Total Revenue: $977.50
-🏆 Best Seller: Pen
-📈 Average Units Sold: 145.00
-
-👨‍💻 Author
-Anshumaan Mishra
-
-
-### 📊 Project 25 – Performance Analysis by Class & Gender
-
-### 🧠 Objective
-This project analyzes student performance in **Math** and **English** based on their **Class** and **Gender**, using the `pandas` library.
-
----
-
-### 📁 Files Included
-- `performance_analysis.py` – Main script
-- `student_extended.csv` – Input CSV dataset
-- `sample_output.png` – Screenshot of output
-
----
-
-### 🛠️ Features
-- Grouped analysis using `.groupby()` on `Class` and `Gender`
-- Calculates:
-  - 📉 Minimum
-  - 📈 Maximum
-  - 🧮 Average
-  - 🔢 Count
-- Outputs clearly structured data tables for easy comparison
-
----
-
-### 📥 Sample Input (CSV)
-
-```csv
-Name,Class,Gender,Math,English
-Amit,10,M,85,81
-Neha,10,F,92,95
-Ravi,11,M,78,76
-Simran,11,F,90,85
-Arjun,10,M,65,89
-Sana,11,F,71,70
-Karan,11,M,84,80
-Divya,11,F,72,78
-....
-````
-🖨️Sample Output(Text Perview)
-
-### 🖨️ Sample Output
-
-![sample output](sample_output.png)
-
-Group-wise Average(Class & Gender)
-                    Math  English
-Class Gender                    
-10    F              92      95
-      M              75      85
-11    F              77.7    77.6
-      M              81      78
-
-Aggregated Scores (min, max, count)
-                   Math                English           
-                   min  max count     min  max count
-Class Gender                                        
-10    F             92   92     1      95   95     1
-      M             65   85     2      81   89     2
-11    F             71   90     3      70   85     3
-      M             78   84     2      76   80     2
-
-▶️How to Run 
-
-Make sure pandas is installed. Then run the script using:
-
-python performance_analysis.py
-
-🧑‍💻 Author & Info
-Author: Anshumaan Mishra
-
-Date: July 2025
-
-Category: Beginner Pandas Project
-
-## 📊 Project 26 – Product Sales Summary
-
-### 🧠 Objective
-Analyze a CSV file containing product sales and extract key insights like total sales, top performer, and average performance using **pandas**.
-
----
-
-### 📁 Files Included
-- `product_sales_analysis.py` – Main script for analysis
-- `product_info.csv` – Sample input data
-
----
-
-### 🛠️ Features
-- ✅ Reads CSV using `pandas`
-- 📈 Calculates:
-  - Total Units Sold
-  - Top-Selling Product
-  - Average Units Sold
-- 🔽 Sorts products by units sold in descending order
-
----
-
-### 📥 Sample Input (CSV)
-
-```csv
-Product,Units Sold
-Laptop,150
-Phone,200
-Tablet,120
-Monitor,180
-Keyboard,90
-
-   Product  Units Sold
-0   Laptop          150
-1    Phone          200
-2   Tablet          120
-3  Monitor          180
-4 Keyboard           90
-
-Total Units Sold: 740
-
-Top-Selling Product:
-  Product  Units Sold
-1   Phone         200
-
-Average Units Sold: 148.0
-
-Sorted Products by Sales:
-  Product  Units Sold
-1   Phone         200
-3  Monitor        180
-0   Laptop        150
-2   Tablet        120
-4 Keyboard         90
-
-➡️How to run
-Make sure pandas is installed:
-pip install pandas
-
-Then run:
-python product_sales_analysis.py
-
-👨‍💻 Author
-Anshumaan Mishra
-
-## 🧹 Project 27: Student Data Cleaning with Pandas
-
-This project demonstrates beginner-level data cleaning using **Pandas** with a simple student dataset. Tasks include handling missing values, normalizing inconsistent city names, and extracting value counts for analysis.
-
----
-
-### 📂 Files Included
-
-- `student_data.py` → Python script for cleaning and analysis
-- `student_data.csv` → Raw student data with inconsistencies
-- `Sample_output.png` → Screenshot showing cleaned output
-
----
-
-### ⚙ Features Covered
-
-- `fillna()` with `mean()` for numeric columns
-- `value_counts()` for gender distribution
-- City normalization (handling case sensitivity)
-- Checking unique cities with `nunique()`
-- Final cleaned dataset printout
-
----
-
-### ✅ Libraries Used
-
-- `pandas`
-
----
-
-### 💡 Use Case
-
-This project is ideal for those learning:
-- Basic real-world data cleaning tasks
-- Handling missing values and inconsistencies
-- Beginner-friendly Pandas workflows
-
-
-## 🎓 Student Score Analysis with pandas
-
-This project performs data cleaning and analysis on a dataset of student exam scores, cities, and subjects using Python and pandas.
-
----
-
-### 📌 Features
-- 🧹 Cleans messy string data (e.g., whitespace, casing)
-- 🔢 Converts non-numeric scores into valid numerical format
-- 🚫 Drops missing or duplicate records
-- 📊 Calculates:
-  - Average score
-  - Unique students
-  - Students per subject
-  - Top scorer in Science
-  - Average score per subject
-  - Most common city
-
----
-
-### 🧪 Sample Output
-
-
----
-
-### 🛠️ Tech Stack
-- Python 🐍
-- pandas 📊
-
----
-
-### 🚀 How to Run
-
-```bash
-python student_performance.py
-
-## 📊 Sales Analysis Dashboard using Pivot Tables
-
-### ✅ Description
-This project analyzes a sample sales dataset using pandas pivot tables to generate real-time business reports.
-
-### 🛠️ Tools Used
-- Python 🐍
-- Pandas 📊
-
-### 🚀 Features
-- Total Revenue by Product and Region
-- Average Units Sold per Region
-- Revenue per Salesperson
-- Monthly Revenue Trend (Bonus)
-
-### 📂 Sample Dataset
-- 25 rows of sales transactions (Date, Product, Revenue, Units, etc.)
-
-### 📸 Output Screenshots
-(Add console output or matplotlib charts if you use them)
-
-### 🙌 Learning Outcome
-- Practice with `pivot_table()`, `groupby()`, cleaning, and basic analysis logic.
-
-
+3. Run any project script
+   Example
+   python student_performance.py
+
+👨‍💻 Author  
+Anshumaan Mishra  
+Data Analyst (Python | Pandas | Data Cleaning | Reporting)
