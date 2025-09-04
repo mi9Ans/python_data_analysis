@@ -111,14 +111,11 @@ Covers **data cleaning, transformation, grouping, and summary reporting**.
 - Prepares data for reporting/dashboard  
 
 ---
-
 ## 🚀 How to Run  
 
 ```bash
 pip install pandas
 python student_performance.py
-
----
 
 ## 👨‍💻 Author
 Anshumaan Mishra
