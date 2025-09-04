@@ -119,7 +119,7 @@ python student_performance.py
 
 ```
 
-## 👨‍💻 Author
+# 👨‍💻 Author
 Anshumaan Mishra
 Data Analyst (Python | Pandas | Data Cleaning | Reporting)
 
