@@ -114,13 +114,11 @@ Covers **data cleaning, transformation, grouping, and summary reporting**.
 
 ## 🚀 How to Run  
 
-1. Install requirements:
-   ```bash
+```bash
 pip install pandas
-3. Run any project script
-   Example
-   python student_performance.py
+python student_performance.py
 
-👨‍💻 Author  
-Anshumaan Mishra  
+# 👨‍💻 Author
+Anshumaan Mishra
 Data Analyst (Python | Pandas | Data Cleaning | Reporting)
+
